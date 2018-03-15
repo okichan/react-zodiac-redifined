@@ -1,8 +1,9 @@
-const express = require('express')
+const express = require("express");
 
-const server = express()
+const server = express();
+
+server.use([require("./routes/zodiacs")]);
 
 server.listen(7000, () => {
-  console.log('Started at http://localhost:7000');
-})
-
+  console.log("Started at http://localhost:7000");
+});
