@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost/zodiac-redefined");
+mongoose.connect(process.env.MONGO_URI);
 mongoose.Promise = global.Promise;
 
 module.exports = mongoose;
