@@ -10,14 +10,6 @@
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive"
   },
-  "keywords": [
-    "react challenge",
-    "tryouts",
-    "react developer",
-    "hiring"
-  ],
-  "author": "Unscriptd Ltd",
-  "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
     "json-server": "0.10.1",

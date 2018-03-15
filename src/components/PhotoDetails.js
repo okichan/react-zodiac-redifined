@@ -7,7 +7,7 @@ function PhotoDetails({ data, onClickSave, showEditForm }) {
     data && (
       <Fragment>
         <figure style={{ textAlign: "center" }}>
-          <img className="large" src={data.display_sizes[0].uri} alt={data.artist} key={data.id} />
+          <img className="large" src={data.uri} alt={data.name} key={data.id} />
         </figure>
         <div className="details-container">
           <table>
@@ -17,7 +17,7 @@ function PhotoDetails({ data, onClickSave, showEditForm }) {
                   <p>Title</p>
                 </td>
                 <td>
-                  <p>{data.title}</p>
+                  <p>{data.name}</p>
                 </td>
               </tr>
               <tr>
@@ -25,7 +25,7 @@ function PhotoDetails({ data, onClickSave, showEditForm }) {
                   <p>Caption</p>
                 </td>
                 <td>
-                  <p>{data.caption}</p>
+                  <p>{data.description}</p>
                 </td>
               </tr>
               <tr>
@@ -33,7 +33,7 @@ function PhotoDetails({ data, onClickSave, showEditForm }) {
                   <p>Artist</p>
                 </td>
                 <td>
-                  <p>{data.artist}</p>
+                  <p>yay</p>
                 </td>
               </tr>
             </tbody>
@@ -57,7 +57,7 @@ function PhotoDetails({ data, onClickSave, showEditForm }) {
 
                 const form = event.target;
                 const elements = form.elements;
-                const title = elements.title.value;
+                const title = elements.name.value;
                 const caption = elements.caption.value;
 
                 onClickSave({ title, caption, id });
@@ -66,9 +66,9 @@ function PhotoDetails({ data, onClickSave, showEditForm }) {
             >
               <div className="editfield">
                 <label>Title</label>
-                <input type="text" name="title" className="mb-2" defaultValue={data.title} />
+                <input type="text" name="title" className="mb-2" defaultValue={data.name} />
                 <label>Caption</label>
-                <textarea className="mb-2" name="caption" defaultValue={data.caption} />
+                <textarea className="mb-2" name="caption" defaultValue={data.description} />
               </div>
               <button className="mb-2">Save changes</button>
             </form>

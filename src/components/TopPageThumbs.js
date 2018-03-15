@@ -30,9 +30,9 @@ function TopPageThumbs({
               <Link to={`/${data.id}`} key={data.id} className={isSelectMode ? "back" : ""}>
                 <img
                   className={`thumb ${isSelectMode ? "back" : ""}`}
-                  title={data.title}
-                  src={data.display_sizes[2].uri}
-                  alt={data.artist}
+                  title={data.name}
+                  src={data.uri}
+                  alt={data.name}
                   key={data.id}
                 />
               </Link>

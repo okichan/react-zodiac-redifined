@@ -140,12 +140,7 @@ class App extends Component {
           <header className="header">
             <Link to="/">
               <h1 className="h1 text-center">
-                <span role="img" aria-label="v">
-                  🤘
-                </span>Our awesome moments
-                <span role="img" aria-label="v">
-                  🤘
-                </span>
+                12 Zodiac Animals Re-defined!
               </h1>
             </Link>
           </header>
