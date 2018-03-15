@@ -119,16 +119,17 @@ class App extends Component {
 
   deletePhotos = () => {
     let { selectedPhotos } = this.state;
-    selectedPhotos.map(photo => {
-      deletePhoto(photo)
-        .then(res => {
-          this.load();
-        })
-        .catch(error => {
-          this.setState({ error });
-        });
-      return null;
-    });
+    alert("No you can't delete us!")
+    // selectedPhotos.map(photo => {
+    //   deletePhoto(photo)
+    //     .then(res => {
+    //       this.load();
+    //     })
+    //     .catch(error => {
+    //       this.setState({ error });
+    //     });
+    //   return null;
+    // });
   };
 
   render() {

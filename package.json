@@ -1,6 +1,7 @@
 {
-  "name": "react-mini-album",
+  "name": "react-zodiac-redifined",
   "version": "1.0.0",
+  "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
     "dev": "json-server --port 3010 --watch db.json",

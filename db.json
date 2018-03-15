@@ -7,7 +7,9 @@
         "The pink fairy armadillo (Chlamyphorus truncatus) or pichiciego is the smallest species of armadillo first described by R. Harlan in 1825. This desert-adapted animal is endemic to central Argentina and can be found inhabiting sandy plains, dunes, and scrubby grasslands.",
       "uri":
         "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know/strange-animals-you-didnt-know-10-1.jpg",
-      "year": 4
+      "year": 4,
+      "personality":
+        "A powerful sign, those born under the Chinese Zodiac sign of the Pink Fairt Armadillo are energetic and warm-hearted, charismatic, lucky at love and egotistic. They’re natural born leaders, good at giving orders and doing what’s necessary to remain on top. Compatible with Okapi and Maned Wolf."
     },
     {
       "id": 2,
@@ -16,8 +18,10 @@
         "The okapi also known as the forest giraffe or zebra giraffe, is an artiodactyl mammal native to the northeast of the Democratic Republic of the Congo in Central Africa.",
       "uri":
         "https://21786-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2014/09/okapi-445px.jpg",
-        "year": 5
-      },
+      "year": 5,
+      "personality":
+        "You are seductive, gregarious, introverted, generous, charming, good with money, analytical, insecure, jealous, slightly dangerous, smart, they rely on gut feelings, are hard-working and intelligent. Compatible with Gerenuk or Red River Hog."
+    },
     {
       "id": 3,
       "name": "Maned Wolf",
@@ -25,8 +29,10 @@
         "The maned wolf (Chrysocyon brachyurus) is the largest canid of South America. Its markings resemble those of foxes, but it is not a fox, nor is it a wolf, as it is not closely related to other canids. It is the only species in the genus Chrysocyon (meaning \"golden dog\").",
       "uri":
         "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know/strange-animals-you-didnt-know-2.jpg",
-        "year": 6
-      },
+      "year": 6,
+      "personality":
+        "Those born under the Chinese Zodiac sign of the Maned Wolf love to roam free. They’re energetic, self-reliant, money-wise, and they enjoy traveling, love and intimacy. They’re great at seducing, sharp-witted, impatient and sometimes seen as a drifter. Compatible with Star-Nosed Mole or Sunda Colugo."
+    },
     {
       "id": 4,
       "name": "Indian Purple Frog",
@@ -34,8 +40,10 @@
         "Nasikabatrachus sahyadrensis is a frog species belonging to the family Sooglossidae. It can be found in the Western Ghats in India. Names in English that have been used for this species are purple frog, Indian purple frog, or pignose frog.",
       "uri":
         "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know-2/strange-animals-you-didnt-know-2-12.jpg",
-        "year": 7
-      },
+      "year": 7,
+      "personality":
+        "You enjoy being alone in their thoughts. They’re creative, thinkers, wanderers, unorganized, high-strung and insecure, and can be anxiety-ridden. They need lots of love, support and reassurance. Appearance is important too. Compatible with Pink Fairy Armadillo or Sapphirina Copepod."
+    },
     {
       "id": 5,
       "name": "Patagonian Mara",
@@ -43,15 +51,19 @@
         "The Patagonian mara (Dolichotis patagonum) is a relatively large rodent in the mara genus (Dolichotis). It is also known as the Patagonian cavy, Patagonian hare or dillaby. This herbivorous, somewhat rabbit-like animal is found in open and semi-open habitats in Argentina, including large parts of Patagonia.",
       "uri":
         "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know/strange-animals-you-didnt-know-19.jpg",
-        "year": 8
-      },
+      "year": 8,
+      "personality":
+        "You thrive on having fun. You're energetic, upbeat, and good at listening but lack self-control. They like being active and stimulated and enjoy pleasing self before pleasing others. They’re heart-breakers, not good at long-term relationships, morals are weak. Compatible with Gerenuk or Indian Purple Frog."
+    },
     {
       "id": 6,
       "name": "Sapphirina Copepod",
       "description":
         "Copepods are the rice of the sea, tiny shrimp-like animals at the base of the ocean food chain. And like rice, they are generally not known for their charisma. Sea sapphires are an exception. Though they are often small, a few millimeters, they are stunningly beautiful.",
       "uri": "https://pbs.twimg.com/media/DXXF8-QVoAAImSu.jpg",
-      "year": 9
+      "year": 9,
+      "personality":
+        "Those born under the Chinese Zodiac sign of the Sapphirina Copepod are practical, resourceful, observant, analytical, straightforward, trusting, honest, perfectionists, neat and conservative. Compatible with Patagonian Mara or Dumbo Octopus."
     },
     {
       "id": 7,
@@ -60,8 +72,9 @@
         "The name dumbo octopus refers not just to one species but to an entire genus of deep-sea umbrella octopuses, noted for their fins that resemble Dumbo the elephant's ears (of Disney fame). There are at least 15 species of dumbo octopuses, and like all umbrella octopuses, their arms are connected by a web of skin.",
       "uri":
         "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know/strange-animals-you-didnt-know-7-1.jpg",
-        "year": 10
-      },
+      "year": 10,
+      "personality": "Those born under the Chinese Zodiac sign of the Dumbo Octopus are loyal, faithful, honest, distrustful, often guilty of telling white lies, temperamental, prone to mood swings, dogmatic, and sensitive. Dumbo Octopi excel in business but have trouble finding mates. Compatible with Tibetan sand fox or Okapi."
+    },
     {
       "id": 8,
       "name": "Gerenuk",
@@ -69,15 +82,18 @@
         "The gerenuk, also known as the giraffe gazelle, is a long-necked antelope found in the Horn of Africa and the drier parts of East Africa.",
       "uri":
         "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know/strange-animals-you-didnt-know-8-1.jpg",
-        "year": 11
-      },
+      "year": 11,
+      "personality": "Those born under the Chinese Zodiac sign of the Gerenuk are extremely nice, good-mannered and tasteful. They’re perfectionists who enjoy finer things but are not perceived as snobs. They enjoy helping others and are good companions until someone close crosses them, then look out! They’re intelligent, always seeking more knowledge, and exclusive. Compatible with Star-Nosed Mole or Maned Wolf."
+    },
     {
       "id": 9,
       "name": "Red River Hog",
       "description":
         "The red river hog (Potamochoerus porcus), also known as the bush pig is a wild member of the pig family living in Africa, with most of its distribution in the Guinean and Congolian forests. It is rarely seen away from rainforests, and generally prefers areas near rivers or swamps.",
       "uri": "https://pbs.twimg.com/media/DXJcw78UQAAXyzX.jpg",
-      "year": 0
+      "year": 0,
+      "personality":
+        "You are quick-witted, clever, charming, sharp and funny. They have excellent taste, are a good friend and are generous and loyal to others considered part of its pack. Motivated by money, can be greedy, is ever curious, seeks knowledge and welcomes challenges. Compatible with Sunda Colugo or Tibetan Sand Fox."
     },
     {
       "id": 10,
@@ -86,8 +102,10 @@
         "The star-nosed mole (Condylura cristata) is a small mole found in wet low areas in the northern parts of America. It is the only member of the tribe Condylurini and the genus Condylura.",
       "uri":
         "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know/strange-animals-you-didnt-know-14.jpg",
-        "year": 1
-      },
+      "year": 1,
+      "personality":
+        "You are steadfast, solid, a goal-oriented leader, detail-oriented, hard-working, stubborn, serious and introverted but can feel lonely and insecure. Takes comfort in friends and family and is a reliable, protective and strong companion. Compatible with Red River Hog or Gerenuk."
+    },
     {
       "id": 11,
       "name": "Sunda Colugo",
@@ -95,7 +113,9 @@
         "The Sunda flying lemur (Galeopterus variegatus) or Sunda Colugo, also known as the Malayan flying lemur or Malayan colugo, is a species of colugo. Until recently, it was thought to be one of only two species of flying lemur, the other being the Philippine flying lemur which is found only in the Philippines.",
       "uri":
         "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know/strange-animals-you-didnt-know-16.jpg",
-      "year": 2
+      "year": 2,
+      "personality":
+        "Those born under the Chinese Zodiac sign of the Sunda Colugo are authoritative, self-possessed, have strong leadership qualities, are charming, ambitious, courageous, warm-hearted, highly seductive, moody, intense, and they’re ready to pounce at any time. Compatible with Sapphirina Copepod or Dumbo Octpus."
     },
     {
       "id": 12,
@@ -103,7 +123,9 @@
       "description":
         "The Tibetan sand fox (Vulpes ferrilata) is a species of true fox endemic to the high Tibetan Plateau, Ladakh plateau, Nepal, China, Sikkim, and Bhutan, up to altitudes of about 5300 m. It is classed as of \"least concern\" for extinction by the IUCN, on account of its widespread range in the Tibetan Plateau's steppes.",
       "uri": "https://featuredcreature.com/wp-content/uploads/2012/10/296974788_a39924a8c62.jpg",
-      "year": 3
+      "year": 3,
+      "personality":
+        "You enjoy being surrounded by family and friends. You're popular, compassionate, sincere, and they like to avoid conflict and are sometimes seen as pushovers. Tibetan Sand Foxes enjoy home and entertaining at home. Compatible with Indian Purple Frog or Patagonian Mara."
     }
   ]
 }

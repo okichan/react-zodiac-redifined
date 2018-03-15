@@ -14,7 +14,7 @@ function PhotoDetails({ data, onClickSave, showEditForm }) {
             <tbody>
               <tr>
                 <td>
-                  <p>Title</p>
+                  <p>Name</p>
                 </td>
                 <td>
                   <p>{data.name}</p>
@@ -22,7 +22,7 @@ function PhotoDetails({ data, onClickSave, showEditForm }) {
               </tr>
               <tr>
                 <td>
-                  <p>Caption</p>
+                  <p>Description</p>
                 </td>
                 <td>
                   <p>{data.description}</p>
@@ -30,10 +30,10 @@ function PhotoDetails({ data, onClickSave, showEditForm }) {
               </tr>
               <tr>
                 <td>
-                  <p>Artist</p>
+                  <p>Characteristics</p>
                 </td>
                 <td>
-                  <p>yay</p>
+                  <p>{data.personality}</p>
                 </td>
               </tr>
             </tbody>
@@ -46,7 +46,7 @@ function PhotoDetails({ data, onClickSave, showEditForm }) {
               showEditForm();
             }}
           >
-            [Edit]
+            [Screw this I'm gonna change it]
           </span>
 
           <div id="edit-wrapper" className="hidden">
