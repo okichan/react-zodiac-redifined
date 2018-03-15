@@ -93,6 +93,12 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start; }
+  .flex-container .animal-name {
+    font-size: 18px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+    padding: 0;
+    margin: 10px; }
   .flex-container .thumb-wrapper {
     position: relative;
     padding: 3px 3px 0 3px;
@@ -110,10 +116,15 @@ button {
       z-index: -20; }
     .flex-container .thumb-wrapper .thumb {
       width: 240px;
-      border-radius: 3px; }
+      border-radius: 3px;
+      box-sizing: border-box;
+      transition: border 0.3s;
+      border: 0 solid; }
       .flex-container .thumb-wrapper .thumb .back {
         position: relative;
         z-index: -10; }
+      .flex-container .thumb-wrapper .thumb:hover {
+        border: 19px solid #ff2c59; }
 
 .swing {
   animation: swing ease-in-out 0.3s infinite alternate;

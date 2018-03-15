@@ -18,6 +18,7 @@ function TopPageThumbs({
         {data.map(data => {
           return (
             <div className={`thumb-wrapper ${isSelectMode ? "swing" : ""}`} key={`div_${data.id}`}>
+              <p className="animal-name">{data.name}</p>
               <input
                 className={`checkbox ${isSelectMode ? "" : "hidden"}`}
                 type="checkbox"
