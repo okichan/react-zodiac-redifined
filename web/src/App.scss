@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 :focus {
   outline: 0;
 }
@@ -36,8 +40,28 @@
 .header {
   text-align: center;
   padding: 20px;
-  background: #333;
+  background: linear-gradient(rgb(35, 48, 15), rgb(82, 104, 72));
   color: white;
+
+  .search-component {
+    input {
+      font-size: 26px;
+      width: 5.5rem;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    button {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      border: 2px solid transparent;
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
 }
 
 a {
@@ -68,26 +92,6 @@ input {
   margin: 20px;
   padding: 0 4rem;
 
-  .search-component {
-    float: left;
-
-    form {
-      display: flex;
-      height: 35px;
-
-      input {
-        display: inline;
-      }
-      p {
-        font-size: 14px;
-        line-height: 0;
-        margin: 0;
-        padding: 0;
-        transform: translateY(50%);
-      }
-    }
-  }
-
   .delete-component {
     float: right;
   }
@@ -115,7 +119,7 @@ button {
     border-right: 2px solid transparent;
     border-bottom: 2px solid transparent;
     color: white;
-    background: lightseagreen;
+    background: rgb(255, 174, 0);
   }
 }
 
@@ -165,12 +169,12 @@ button {
       box-sizing: border-box;
       transition: border 0.3s;
       border: 0 solid;
-      
+
       .back {
         position: relative;
         z-index: -10;
       }
-      
+
       &:hover {
         border: 19px solid rgb(255, 44, 89);
       }
@@ -196,18 +200,31 @@ button {
 
 // Show page
 
-.details-container {
-  width: 60%;
-  margin: 0 auto;
+.details-parent {
+  width: 100vw;
 
-  table {
-    border-collapse: collapse;
+  figure {
+    text-align: center;
+    img {
+      width: 100%;
+      max-width: 600px;
+    }
   }
 
-  td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    line-height: 1.5;
+  .details-container {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 90%;
+    
+    table {
+      border-collapse: collapse;
+    }
+
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      line-height: 1.5;
+    }
   }
 }
 

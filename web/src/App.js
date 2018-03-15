@@ -11,7 +11,6 @@ import ReactDOM from "react-dom";
 class App extends Component {
   state = {
     error: null,
-    enteredWord: "",
     data: null,
     selectedPhotos: [],
     isSelectMode: false
@@ -67,6 +66,7 @@ class App extends Component {
     searchZodiac(amari).then(res => {
       this.setState({ data: res });
     });
+    
   };
 
   clearSearch = () => {
@@ -114,7 +114,7 @@ class App extends Component {
 
   deletePhotos = () => {
     let { selectedPhotos } = this.state;
-    alert("No you can't delete us!")
+    alert("No you can't delete us!");
   };
 
   render() {
@@ -125,9 +125,12 @@ class App extends Component {
         <div className="App">
           <header className="header">
             <Link to="/">
-              <h1 className="h1 text-center" onClick={this.clearSearch}>12 Zodiac Animals Re-defined!</h1>
-              <h5>Becuase who wants to be rats and snakes!?</h5>
+              <h1 className="h1 text-center" onClick={this.clearSearch}>
+                12 Zodiac Animals Re-defined!
+              </h1>
             </Link>
+            <h5>Because who really wants to be rats or pigs!?</h5>
+            <SearchField searchImage={this.searchImage} clearSearch={this.clearSearch} />
           </header>
 
           {/* load error message */}
@@ -141,12 +144,6 @@ class App extends Component {
               render={() => (
                 <Fragment>
                   <div className="tools">
-                    <SearchField
-                      enteredWord={this.enteredWord}
-                      searchImage={this.searchImage}
-                      enteredWordHandler={this.enteredWordHandler}
-                      clearSearch={this.clearSearch}
-                    />
                     <DeleteSwitch
                       data={data}
                       selectPhotosToggle={this.selectPhotosToggle}
@@ -154,9 +151,7 @@ class App extends Component {
                       isSelectMode={isSelectMode}
                     />
                   </div>
-                  <h3 className="center">
-                  { data && data.length === 1 ? "you are..." : "" }
-                  </h3>
+                  <h3 className="center">{data && data.length === 1 ? "you are..." : ""}</h3>
                   <TopPageThumbs
                     data={data}
                     selectedPhotos={selectedPhotos}

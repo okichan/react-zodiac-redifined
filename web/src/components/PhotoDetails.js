@@ -5,8 +5,8 @@ function PhotoDetails({ data, onClickSave, showEditForm }) {
   
   return (
     data && (
-      <Fragment>
-        <figure style={{ textAlign: "center" }}>
+      <div className="details-parent">
+        <figure>
           <img className="large" src={data.uri} alt={data.name} key={data.id} />
         </figure>
         <div className="details-container">
@@ -49,7 +49,7 @@ function PhotoDetails({ data, onClickSave, showEditForm }) {
             [Screw this I'm gonna change it]
           </span> */}
 
-          <div id="edit-wrapper" className="hidden">
+          {/* <div id="edit-wrapper" className="hidden">
             <h2>Edit data</h2>
             <form
               onSubmit={event => {
@@ -72,9 +72,9 @@ function PhotoDetails({ data, onClickSave, showEditForm }) {
               </div>
               <button className="mb-2">Save changes</button>
             </form>
-          </div>
+          </div> */}
         </div>
-      </Fragment>
+      </div>
     )
   );
 }

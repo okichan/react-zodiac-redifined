@@ -4,7 +4,7 @@ function DeleteSwitch({ data, isSelectMode, selectPhotosToggle, deletePhotos }) 
   return (
     data && (
       <div className="delete-component">
-        <button onClick={selectPhotosToggle}>Select photos</button>
+        <button onClick={selectPhotosToggle}>Delete photos</button>
         <div className={`svg-container ${isSelectMode ? "show" : "hidden"}`}>
           <svg
             className="clickable"
