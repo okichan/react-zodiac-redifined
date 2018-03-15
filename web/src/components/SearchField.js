@@ -9,7 +9,6 @@ function SearchField({ enteredWord, searchImage, enteredWordHandler, clearSearch
           const form = event.target
           const elements = form.elements
           const query = elements.query.value
-          alert('You are...')
           searchImage(query);
         }}
       >

@@ -61,11 +61,6 @@ class App extends Component {
     toggle.className = toggle.className === "hidden" ? "" : "hidden";
   };
 
-  // enteredWordHandler = event => {
-  //   const input = event.target.value;
-  //   this.setState({ enteredWord: input });
-  // };
-
   searchImage = e => {
     const amari = Number(e) % 12;
 
@@ -120,16 +115,6 @@ class App extends Component {
   deletePhotos = () => {
     let { selectedPhotos } = this.state;
     alert("No you can't delete us!")
-    // selectedPhotos.map(photo => {
-    //   deletePhoto(photo)
-    //     .then(res => {
-    //       this.load();
-    //     })
-    //     .catch(error => {
-    //       this.setState({ error });
-    //     });
-    //   return null;
-    // });
   };
 
   render() {
@@ -141,6 +126,7 @@ class App extends Component {
           <header className="header">
             <Link to="/">
               <h1 className="h1 text-center" onClick={this.clearSearch}>12 Zodiac Animals Re-defined!</h1>
+              <h5>Becuase who wants to be rats and snakes!?</h5>
             </Link>
           </header>
 
@@ -168,6 +154,9 @@ class App extends Component {
                       isSelectMode={isSelectMode}
                     />
                   </div>
+                  <h3 className="center">
+                  { data && data.length === 1 ? "you are..." : "" }
+                  </h3>
                   <TopPageThumbs
                     data={data}
                     selectedPhotos={selectedPhotos}

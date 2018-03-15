@@ -1,6 +1,9 @@
 :focus {
   outline: 0; }
 
+.center {
+  text-align: center; }
+
 .mb-2 {
   margin-bottom: 20px; }
 
