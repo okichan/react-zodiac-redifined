@@ -10,7 +10,7 @@ function PhotoDetails({ data, onClickSave, showEditForm }) {
           <img className="large" src={data.uri} alt={data.name} key={data.id} />
         </figure>
         <div className="details-container">
-          <table>
+          <table className=" mb-2">
             <tbody>
               <tr>
                 <td>
@@ -39,7 +39,7 @@ function PhotoDetails({ data, onClickSave, showEditForm }) {
             </tbody>
           </table>
 
-          <span
+          {/* <span
             id="edit-link"
             className="clickable pb-2"
             onClick={() => {
@@ -47,7 +47,7 @@ function PhotoDetails({ data, onClickSave, showEditForm }) {
             }}
           >
             [Screw this I'm gonna change it]
-          </span>
+          </span> */}
 
           <div id="edit-wrapper" className="hidden">
             <h2>Edit data</h2>

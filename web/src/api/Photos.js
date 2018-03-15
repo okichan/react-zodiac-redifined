@@ -18,7 +18,7 @@ export function updatePhoto(id, data) {
  }
  
  export function searchZodiac(quote) {
-   return api.get(`/zodiacs?year=${quote}`)
+   return api.get(`/zodiacs/${quote}`)
      .then((res) => res.data)
  }
  
