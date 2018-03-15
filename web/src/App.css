@@ -29,6 +29,9 @@ body {
     color: tomato;
     fill: tomato; }
 
+.mb-100 {
+  margin-bottom: 100vh; }
+
 .header {
   text-align: center;
   padding: 20px;

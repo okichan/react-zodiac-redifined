@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import "./App.css";
+
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { listPhotos, updatePhoto, searchZodiac, deletePhoto } from "./api/Photos";
 import PhotoDetails from "./components/PhotoDetails";
@@ -66,7 +67,6 @@ class App extends Component {
     searchZodiac(amari).then(res => {
       this.setState({ data: res });
     });
-    
   };
 
   clearSearch = () => {
@@ -132,7 +132,6 @@ class App extends Component {
             <h5>Because who really wants to be rats or pigs!?</h5>
             <SearchField searchImage={this.searchImage} clearSearch={this.clearSearch} />
           </header>
-
           {/* load error message */}
           {error && <h2 id="error">{error.message}</h2>}
 
@@ -151,7 +150,7 @@ class App extends Component {
                       isSelectMode={isSelectMode}
                     />
                   </div>
-                  <h3 className="center">{data && data.length === 1 ? "you are..." : ""}</h3>
+                 {data && data.length === 1 ? <p className='center mb-100'>You are...</p> : ""}
                   <TopPageThumbs
                     data={data}
                     selectedPhotos={selectedPhotos}
