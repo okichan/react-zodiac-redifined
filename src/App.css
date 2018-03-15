@@ -39,7 +39,7 @@ a {
   a:hover {
     text-decoration: underline; }
 
-input[type="text"] {
+input {
   border-radius: 5px;
   padding: 0.5rem; }
 

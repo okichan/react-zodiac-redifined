@@ -6,7 +6,8 @@
       "description":
         "The pink fairy armadillo (Chlamyphorus truncatus) or pichiciego is the smallest species of armadillo first described by R. Harlan in 1825. This desert-adapted animal is endemic to central Argentina and can be found inhabiting sandy plains, dunes, and scrubby grasslands.",
       "uri":
-        "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know/strange-animals-you-didnt-know-10-1.jpg"
+        "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know/strange-animals-you-didnt-know-10-1.jpg",
+      "year": 4
     },
     {
       "id": 2,
@@ -14,38 +15,43 @@
       "description":
         "The okapi also known as the forest giraffe or zebra giraffe, is an artiodactyl mammal native to the northeast of the Democratic Republic of the Congo in Central Africa.",
       "uri":
-        "https://21786-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2014/09/okapi-445px.jpg"
-    },
+        "https://21786-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2014/09/okapi-445px.jpg",
+        "year": 5
+      },
     {
       "id": 3,
       "name": "Maned Wolf",
       "description":
         "The maned wolf (Chrysocyon brachyurus) is the largest canid of South America. Its markings resemble those of foxes, but it is not a fox, nor is it a wolf, as it is not closely related to other canids. It is the only species in the genus Chrysocyon (meaning \"golden dog\").",
       "uri":
-        "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know/strange-animals-you-didnt-know-2.jpg"
-    },
+        "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know/strange-animals-you-didnt-know-2.jpg",
+        "year": 6
+      },
     {
       "id": 4,
       "name": "Indian Purple Frog",
       "description":
         "Nasikabatrachus sahyadrensis is a frog species belonging to the family Sooglossidae. It can be found in the Western Ghats in India. Names in English that have been used for this species are purple frog, Indian purple frog, or pignose frog.",
       "uri":
-        "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know-2/strange-animals-you-didnt-know-2-12.jpg"
-    },
+        "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know-2/strange-animals-you-didnt-know-2-12.jpg",
+        "year": 7
+      },
     {
       "id": 5,
       "name": "Patagonian Mara",
       "description":
         "The Patagonian mara (Dolichotis patagonum) is a relatively large rodent in the mara genus (Dolichotis). It is also known as the Patagonian cavy, Patagonian hare or dillaby. This herbivorous, somewhat rabbit-like animal is found in open and semi-open habitats in Argentina, including large parts of Patagonia.",
       "uri":
-        "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know/strange-animals-you-didnt-know-19.jpg"
-    },
+        "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know/strange-animals-you-didnt-know-19.jpg",
+        "year": 8
+      },
     {
       "id": 6,
       "name": "Sapphirina Copepod",
       "description":
         "Copepods are the rice of the sea, tiny shrimp-like animals at the base of the ocean food chain. And like rice, they are generally not known for their charisma. Sea sapphires are an exception. Though they are often small, a few millimeters, they are stunningly beautiful.",
-      "uri": "https://pbs.twimg.com/media/DXXF8-QVoAAImSu.jpg"
+      "uri": "https://pbs.twimg.com/media/DXXF8-QVoAAImSu.jpg",
+      "year": 9
     },
     {
       "id": 7,
@@ -53,22 +59,25 @@
       "description":
         "The name dumbo octopus refers not just to one species but to an entire genus of deep-sea umbrella octopuses, noted for their fins that resemble Dumbo the elephant's ears (of Disney fame). There are at least 15 species of dumbo octopuses, and like all umbrella octopuses, their arms are connected by a web of skin.",
       "uri":
-        "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know/strange-animals-you-didnt-know-7-1.jpg"
-    },
+        "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know/strange-animals-you-didnt-know-7-1.jpg",
+        "year": 10
+      },
     {
       "id": 8,
       "name": "Gerenuk",
       "description":
         "The gerenuk, also known as the giraffe gazelle, is a long-necked antelope found in the Horn of Africa and the drier parts of East Africa.",
       "uri":
-        "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know/strange-animals-you-didnt-know-8-1.jpg"
-    },
+        "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know/strange-animals-you-didnt-know-8-1.jpg",
+        "year": 11
+      },
     {
       "id": 9,
       "name": "Red River Hog",
       "description":
         "The red river hog (Potamochoerus porcus), also known as the bush pig is a wild member of the pig family living in Africa, with most of its distribution in the Guinean and Congolian forests. It is rarely seen away from rainforests, and generally prefers areas near rivers or swamps.",
-      "uri": "https://pbs.twimg.com/media/DXJcw78UQAAXyzX.jpg"
+      "uri": "https://pbs.twimg.com/media/DXJcw78UQAAXyzX.jpg",
+      "year": 0
     },
     {
       "id": 10,
@@ -76,22 +85,25 @@
       "description":
         "The star-nosed mole (Condylura cristata) is a small mole found in wet low areas in the northern parts of America. It is the only member of the tribe Condylurini and the genus Condylura.",
       "uri":
-        "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know/strange-animals-you-didnt-know-14.jpg"
-    },
+        "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know/strange-animals-you-didnt-know-14.jpg",
+        "year": 1
+      },
     {
       "id": 11,
       "name": "Sunda Colugo",
       "description":
         "The Sunda flying lemur (Galeopterus variegatus) or Sunda Colugo, also known as the Malayan flying lemur or Malayan colugo, is a species of colugo. Until recently, it was thought to be one of only two species of flying lemur, the other being the Philippine flying lemur which is found only in the Philippines.",
       "uri":
-        "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know/strange-animals-you-didnt-know-16.jpg"
+        "https://static.boredpanda.com/blog/wp-content/uuuploads/strange-animals-you-didnt-know/strange-animals-you-didnt-know-16.jpg",
+      "year": 2
     },
     {
       "id": 12,
       "name": "Tibetan sand fox",
       "description":
         "The Tibetan sand fox (Vulpes ferrilata) is a species of true fox endemic to the high Tibetan Plateau, Ladakh plateau, Nepal, China, Sikkim, and Bhutan, up to altitudes of about 5300 m. It is classed as of \"least concern\" for extinction by the IUCN, on account of its widespread range in the Tibetan Plateau's steppes.",
-      "uri": "https://featuredcreature.com/wp-content/uploads/2012/10/296974788_a39924a8c62.jpg"
+      "uri": "https://featuredcreature.com/wp-content/uploads/2012/10/296974788_a39924a8c62.jpg",
+      "year": 3
     }
   ]
 }

@@ -6,17 +6,20 @@ function SearchField({ enteredWord, searchImage, enteredWordHandler, clearSearch
       <form
         onSubmit={event => {
           event.preventDefault();
-          searchImage();
+          const form = event.target
+          const elements = form.elements
+          const query = elements.query.value
+          alert('You are...')
+          searchImage(query);
         }}
       >
         <input
-          type="text"
+          type="number"
           id="search-field"
-          placeholder="search caption"
-          defaultValue={enteredWord}
-          onChange={enteredWordHandler}
+          placeholder="Your birth year"
+          name="query"
         />
-        <button onClick={searchImage}>Search</button>
+        <button>Search</button>
         <p className="clickable clear" onClick={clearSearch}>
           Clear
         </p>

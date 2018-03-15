@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { listPhotos, updatePhoto, searchPhotoByCaption, deletePhoto } from "./api/Photos";
+import { listPhotos, updatePhoto, searchZodiac, deletePhoto } from "./api/Photos";
 import PhotoDetails from "./components/PhotoDetails";
 import TopPageThumbs from "./components/TopPageThumbs";
 import SearchField from "./components/SearchField";
@@ -61,24 +61,25 @@ class App extends Component {
     toggle.className = toggle.className === "hidden" ? "" : "hidden";
   };
 
-  enteredWordHandler = event => {
-    const input = event.target.value;
-    this.setState({ enteredWord: input });
-  };
+  // enteredWordHandler = event => {
+  //   const input = event.target.value;
+  //   this.setState({ enteredWord: input });
+  // };
 
-  searchImage = () => {
-    let { enteredWord } = this.state;
-    searchPhotoByCaption(enteredWord).then(res => {
+  searchImage = e => {
+    const amari = Number(e) % 12;
+
+    searchZodiac(amari).then(res => {
       this.setState({ data: res });
     });
   };
 
   clearSearch = () => {
-    searchPhotoByCaption("").then(res => {
-      this.setState({ data: res, error: null });
-      const searchTerm = document.getElementById('search-field')
-      searchTerm.value = ''
-    });
+    this.load();
+    if (document.getElementById("search-field")) {
+      const searchTerm = document.getElementById("search-field");
+      searchTerm.value = "";
+    }
   };
 
   toggleTick = event => {
@@ -106,13 +107,12 @@ class App extends Component {
       this.setState({ selectedPhotos: [] });
       Array.from(checkboxes).map(box => {
         box.checked = false;
-        return null
+        return null;
       });
-    } 
-    else {
+    } else {
       Array.from(checkboxes).map(box => {
         box.checked = false;
-        return null
+        return null;
       });
     }
   };
@@ -139,9 +139,7 @@ class App extends Component {
         <div className="App">
           <header className="header">
             <Link to="/">
-              <h1 className="h1 text-center">
-                12 Zodiac Animals Re-defined!
-              </h1>
+              <h1 className="h1 text-center" onClick={this.clearSearch}>12 Zodiac Animals Re-defined!</h1>
             </Link>
           </header>
 
