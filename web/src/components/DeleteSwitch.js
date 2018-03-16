@@ -3,8 +3,8 @@ import React from "react";
 function DeleteSwitch({ data, isSelectMode, selectPhotosToggle, deletePhotos }) {
   return (
     data && (
-      <div className="delete-component">
-        <button onClick={selectPhotosToggle}>Delete photos</button>
+      <div className="delete-component ">
+        <button onClick={selectPhotosToggle} className="clickable">Admin mode</button>
         <div className={`svg-container ${isSelectMode ? "show" : "hidden"}`}>
           <svg
             className="clickable"

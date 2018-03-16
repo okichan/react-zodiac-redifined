@@ -11,9 +11,10 @@ function SearchField({ searchImage, clearSearch }) {
           const query = elements.query.value;
           searchImage(query);
         }}
+        className=" "
       >
         <input type="number" id="search-field" placeholder="YYYY" name="query" />
-        <button>Search</button>
+        <button className="clickable">Check</button>
         <p className="clickable clear" onClick={clearSearch}>
           Clear
         </p>

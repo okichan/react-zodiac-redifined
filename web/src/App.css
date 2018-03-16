@@ -1,11 +1,33 @@
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  background: transparent; }
+  a:visited {
+    color: inherit; }
+
+input {
+  border-radius: 5px;
+  padding: 0.5rem; }
+
+button {
+  border-radius: 5px;
+  padding: 0.5rem;
+  transition: all 0.4s; }
 
 :focus {
   outline: 0; }
 
 .center {
   text-align: center; }
+
+.test {
+  border: 1px solid lime; }
 
 .mb-2 {
   margin-bottom: 20px; }
@@ -25,74 +47,87 @@ body {
 .clickable {
   cursor: pointer;
   transition: all 0.4s; }
-  .clickable:hover {
-    color: tomato;
-    fill: tomato; }
 
 .mb-100 {
   margin-bottom: 100vh; }
 
 .header {
-  text-align: center;
-  padding: 20px;
-  background: linear-gradient(#23300f, #526848);
-  color: white; }
-  .header .search-component input {
-    font-size: 26px;
-    width: 5.5rem;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0; }
-  .header .search-component button {
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    border: 2px solid transparent;
-    font-size: 26px; }
-  .header .search-component p {
-    font-size: 14px; }
-
-a {
-  text-decoration: none;
-  margin: 0;
+  font-family: "Julius Sans One", sans-serif;
+  color: dimgray;
+  display: grid;
+  grid-template-columns: 65% auto;
   padding: 0;
-  background: transparent; }
-  a:visited {
-    color: inherit; }
-  a:hover {
-    text-decoration: underline; }
+  margin: 3vmax; }
+  .header .title {
+    max-width: 320px; }
+    .header .title h1 {
+      padding: 0;
+      margin: 0;
+      font-size: 18px;
+      letter-spacing: 1px; }
+      .header .title h1 a:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: dimgray;
+        transition: all 0.5s ease-in; }
+      .header .title h1 a:hover::after {
+        width: 100%;
+        background: #fffb2a; }
+    .header .title h5 {
+      font-size: 12px;
+      padding: 0.5rem 0;
+      margin: 0; }
+  .header .delete-component {
+    margin: 0;
+    padding: 0;
+    transition: all 0.4s; }
+    .header .delete-component button {
+      font-family: inherit;
+      float: right;
+      margin-right: 30px;
+      background: transparent;
+      border: 0px; }
+      .header .delete-component button:hover {
+        color: skyblue; }
+    .header .delete-component .svg-container {
+      position: absolute;
+      right: 4%;
+      height: 26px;
+      width: 26px; }
+      .header .delete-component .svg-container svg {
+        fill: gray; }
+        .header .delete-component .svg-container svg:hover {
+          fill: rgba(226, 103, 103, 0.678); }
 
-input {
-  border-radius: 5px;
-  padding: 0.5rem; }
+.search-component {
+  font-family: "Julius Sans One", sans-serif;
+  margin-bottom: 60px; }
+  .search-component form {
+    display: grid;
+    grid-template-columns: auto 100px 80px 60px auto; }
+    .search-component form input {
+      font-family: inherit;
+      font-size: 1.3em;
+      grid-column-start: 2;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0; }
+    .search-component form button {
+      font-family: inherit;
+      font-weight: bold;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      background: rgba(240, 255, 240, 0.274); }
+      .search-component form button:hover {
+        background: #f7f8f4; }
+    .search-component form p {
+      text-align: center; }
+      .search-component form p:hover {
+        color: skyblue; }
 
 #error {
   text-align: center; }
-
-.tools {
-  height: 50px;
-  margin: 20px;
-  padding: 0 4rem; }
-  .tools .delete-component {
-    float: right; }
-  .tools button {
-    float: right;
-    margin-right: 0.4rem; }
-  .tools .svg-container {
-    position: absolute;
-    right: 4%;
-    height: 33px;
-    width: 33px; }
-
-button {
-  border-radius: 5px;
-  padding: 0.5rem;
-  transition: all 0.4s; }
-  button:hover {
-    border-left: 2px solid gray;
-    border-top: 2px solid gray;
-    border-right: 2px solid transparent;
-    border-bottom: 2px solid transparent;
-    color: white;
-    background: #ffae00; }
 
 .flex-container {
   margin: 0 auto;
@@ -123,16 +158,16 @@ button {
       position: relative;
       z-index: -20; }
     .flex-container .thumb-wrapper .thumb {
-      width: 240px;
+      max-width: 240px;
       border-radius: 3px;
-      box-sizing: border-box;
-      transition: border 0.3s;
-      border: 0 solid; }
+      transition: all 0.6s;
+      filter: grayscale(100%); }
       .flex-container .thumb-wrapper .thumb .back {
         position: relative;
         z-index: -10; }
       .flex-container .thumb-wrapper .thumb:hover {
-        border: 19px solid #ff2c59; }
+        transform: scale(1.1);
+        filter: grayscale(0); }
 
 .swing {
   animation: swing ease-in-out 0.3s infinite alternate;

@@ -114,7 +114,7 @@ class App extends Component {
 
   deletePhotos = () => {
     let { selectedPhotos } = this.state;
-    alert("No you can't delete us!");
+    alert("You can't delete us so easily! Contact admin.");
   };
 
   render() {
@@ -123,15 +123,22 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <header className="header">
-            <Link to="/">
-              <h1 className="h1 text-center" onClick={this.clearSearch}>
-                12 Zodiac Animals Re-defined!
+          <header className=" header">
+            <div className="title">
+              <h1 onClick={this.clearSearch} className="">
+                <Link to="/">12 Zodiac Animals Re-defined!</Link>
               </h1>
-            </Link>
-            <h5>Because who really wants to be rats or pigs!?</h5>
-            <SearchField searchImage={this.searchImage} clearSearch={this.clearSearch} />
+              <h5 className="">because No one wants to be a pig.</h5>
+            </div>
+            <DeleteSwitch
+              data={data}
+              selectPhotosToggle={this.selectPhotosToggle}
+              deletePhotos={this.deletePhotos}
+              isSelectMode={isSelectMode}
+            />
           </header>
+
+
           {/* load error message */}
           {error && <h2 id="error">{error.message}</h2>}
 
@@ -142,15 +149,9 @@ class App extends Component {
               exact
               render={() => (
                 <Fragment>
-                  <div className="tools">
-                    <DeleteSwitch
-                      data={data}
-                      selectPhotosToggle={this.selectPhotosToggle}
-                      deletePhotos={this.deletePhotos}
-                      isSelectMode={isSelectMode}
-                    />
-                  </div>
-                 {data && data.length === 1 ? <p className='center mb-100'>You are...</p> : ""}
+                <SearchField searchImage={this.searchImage} clearSearch={this.clearSearch} />
+                  <div className="tools" />
+                  {data && data.length === 1 ? <p className="center">You are...</p> : ""}
                   <TopPageThumbs
                     data={data}
                     selectedPhotos={selectedPhotos}

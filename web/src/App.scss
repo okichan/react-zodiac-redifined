@@ -1,5 +1,29 @@
 body {
   overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+
+  &:visited {
+    color: inherit;
+  }
+}
+
+input {
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+button {
+  border-radius: 5px;
+  padding: 0.5rem;
+  transition: all 0.4s;
 }
 
 :focus {
@@ -10,6 +34,9 @@ body {
   text-align: center;
 }
 
+.test {
+  border: 1px solid lime;
+}
 .mb-2 {
   margin-bottom: 20px;
 }
@@ -30,102 +57,126 @@ body {
 .clickable {
   cursor: pointer;
   transition: all 0.4s;
-
-  &:hover {
-    color: tomato;
-    fill: tomato;
-  }
 }
 
 .mb-100 {
   margin-bottom: 100vh;
 }
 
-
 .header {
-  text-align: center;
-  padding: 20px;
-  background: linear-gradient(rgb(35, 48, 15), rgb(82, 104, 72));
-  color: white;
+  font-family: "Julius Sans One", sans-serif;
+  color: dimgray;
+  display: grid;
+  grid-template-columns: 65% auto;
+  padding: 0;
+  margin: 3vmax;
 
-  .search-component {
+  .title {
+    max-width: 320px;
+
+    h1 {
+      padding: 0;
+      margin: 0;
+      font-size: 18px;
+      letter-spacing: 1px;
+      
+      a:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: dimgray;
+        transition: all 0.5s ease-in;
+      }
+      
+      a:hover::after {
+        width: 100%;
+        background: rgb(255, 251, 42);
+      }
+    }
+
+    h5 {
+      font-size: 12px;
+      padding: 0.5rem 0;
+      margin: 0;
+    }
+  }
+
+  .delete-component {
+    margin: 0;
+    padding: 0;
+    transition: all 0.4s;
+
+    button {
+      font-family: inherit;
+      float: right;
+      margin-right: 30px;
+      background: transparent;
+      border: 0px;
+      // padding-top: 5px;
+
+      &:hover {
+        color: skyblue;
+      }
+    }
+
+    .svg-container {
+      position: absolute;
+      right: 4%;
+      height: 26px;
+      width: 26px;
+
+      svg {
+        fill: gray;
+
+        &:hover {
+          fill: rgba(226, 103, 103, 0.678);
+        }
+      }
+    }
+  }
+}
+
+.search-component {
+  font-family: "Julius Sans One", sans-serif;
+  margin-bottom: 60px;
+
+  form {
+    display: grid;
+    grid-template-columns: auto 100px 80px 60px auto;
+
     input {
-      font-size: 26px;
-      width: 5.5rem;
-      border-bottom-right-radius: 0;
+      font-family: inherit;
+      font-size: 1.3em;
+      grid-column-start: 2;
       border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
     }
 
     button {
-      border-bottom-left-radius: 0;
+      font-family: inherit;
+      font-weight: bold;
       border-top-left-radius: 0;
-      border: 2px solid transparent;
-      font-size: 26px;
+      border-bottom-left-radius: 0;
+      background: rgba(240, 255, 240, 0.274);
+
+      &:hover {
+        background: rgb(247, 248, 244);
+      }
     }
 
     p {
-      font-size: 14px;
+      text-align: center;
+
+      &:hover {
+        color: skyblue;
+      }
     }
   }
-}
-
-a {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  background: transparent;
-
-  &:visited {
-    color: inherit;
-  }
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-input {
-  border-radius: 5px;
-  padding: 0.5rem;
 }
 
 #error {
   text-align: center;
-}
-
-.tools {
-  height: 50px;
-  margin: 20px;
-  padding: 0 4rem;
-
-  .delete-component {
-    float: right;
-  }
-
-  button {
-    float: right;
-    margin-right: 0.4rem;
-  }
-  .svg-container {
-    position: absolute;
-    right: 4%;
-    height: 33px;
-    width: 33px;
-  }
-}
-
-button {
-  border-radius: 5px;
-  padding: 0.5rem;
-  transition: all 0.4s;
-
-  &:hover {
-    border-left: 2px solid gray;
-    border-top: 2px solid gray;
-    border-right: 2px solid transparent;
-    border-bottom: 2px solid transparent;
-    color: white;
-    background: rgb(255, 174, 0);
-  }
 }
 
 // Thumbnails
@@ -169,11 +220,10 @@ button {
     }
 
     .thumb {
-      width: 240px;
+      max-width: 240px;
       border-radius: 3px;
-      box-sizing: border-box;
-      transition: border 0.3s;
-      border: 0 solid;
+      transition: all 0.6s;
+      filter: grayscale(100%);
 
       .back {
         position: relative;
@@ -181,7 +231,8 @@ button {
       }
 
       &:hover {
-        border: 19px solid rgb(255, 44, 89);
+        transform: scale(1.1);
+        filter: grayscale(0);
       }
     }
   }
@@ -220,7 +271,7 @@ button {
     max-width: 600px;
     margin: 0 auto;
     width: 90%;
-    
+
     table {
       border-collapse: collapse;
     }
