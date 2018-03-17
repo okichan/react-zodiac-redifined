@@ -123,7 +123,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <header className=" header">
+          <header className=" header ">
             <div className="title">
               <h1 onClick={this.clearSearch} className="">
                 <Link to="/">12 Zodiac Animals Re-defined!</Link>
@@ -137,28 +137,40 @@ class App extends Component {
               isSelectMode={isSelectMode}
             />
           </header>
+
           {/* load error message */}
           {error && <h2 id="error">{error.message}</h2>}
+
           {/* Main */}
           <Switch>
-            <Route
-              path="/"
-              exact
-              render={() => (
-                <Fragment>
-                  <SearchField searchImage={this.searchImage} clearSearch={this.clearSearch} />
-                  <div className="tools" />
-                  {data && data.length === 1 ? <p className="center">You are...</p> : ""}
-                  <TopPageThumbs
-                    data={data}
-                    selectedPhotos={selectedPhotos}
-                    toggleTick={this.toggleTick}
-                    deletePhotos={this.deletePhotos}
-                    isSelectMode={isSelectMode}
-                  />
-                </Fragment>
-              )}
-            />
+            {data ? (
+              <Route
+                path="/"
+                exact
+                render={() => (
+                  <Fragment>
+                    <SearchField searchImage={this.searchImage} clearSearch={this.clearSearch} />
+                    {data.length === 1 ? <p className="center">You are...</p> : ""}
+                    <TopPageThumbs
+                      data={data}
+                      selectedPhotos={selectedPhotos}
+                      toggleTick={this.toggleTick}
+                      deletePhotos={this.deletePhotos}
+                      isSelectMode={isSelectMode}
+                    />
+                  </Fragment>
+                )}
+              />
+            ) : (
+              <div className="sampleContainer ">
+                <div className="loader">
+                  <span className="dot dot_1" />
+                  <span className="dot dot_2" />
+                  <span className="dot dot_3" />
+                  <span className="dot dot_4" />
+                </div>
+              </div>
+            )}
 
             {/* Show individual photo */}
             {data &&
@@ -182,7 +194,7 @@ class App extends Component {
               })}
           </Switch>
           <div className="github">
-            <a href='https://github.com/okichan/react-zodiac-redifined'>
+            <a href="https://github.com/okichan/react-zodiac-redifined">
               <svg
                 viewBox="0 0 256 250"
                 version="1"
