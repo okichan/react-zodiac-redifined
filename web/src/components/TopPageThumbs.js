@@ -34,7 +34,7 @@ function TopPageThumbs({
                   key={`input_${data.id}`}
                 />
                 <div className={isSelectMode ? "" : "back"} />
-                <Link to={`/${data.id}`} key={data.id} className={isSelectMode ? "back" : ""}>
+                <Link to={`/${data.id}`} key={data.id} className={isSelectMode ? "back" : ""} rel="noopener noreferrer">
                   <img
                     className={`thumb ${isSelectMode ? "back" : ""}`}
                     title={data.name}
