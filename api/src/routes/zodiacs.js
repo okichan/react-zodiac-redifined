@@ -11,7 +11,7 @@ router.get('/zodiacs', (req, res) => {
 
 router.get('/zodiacs/:id', (req, res) => {
   const id = req.params.id
-  Zodiac.find({ "year": id })
+  Zodiac.find({ "year": id } || id)
     .then(zodiac => {
       res.json(zodiac)
     })
